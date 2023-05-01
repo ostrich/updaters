@@ -46,7 +46,8 @@ with open(filename, 'wb') as f:
 print(f"Downloaded the latest gzdoom archive file ({filename}) successfully.")
 
 # Extract the archive to the current working directory
-seven_zip_path = "C:\\Program Files\\7-Zip\\7z.exe"
+program_files = os.environ["ProgramW6432"]
+seven_zip_path = f"{program_files}\\7-Zip\\7z.exe"
 with open(os.devnull, 'w') as null:
     subprocess.run([seven_zip_path, 'x', filename, '-y'], stdout=null, stderr=null)
 
