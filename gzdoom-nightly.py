@@ -3,7 +3,7 @@ import subprocess
 import requests
 from bs4 import BeautifulSoup
 
-# The URL of the webpage to scrape
+# gzdoom buildbot repo
 url = "https://devbuilds.drdteam.org/gzdoom/"
 
 # Send a GET request to the webpage
